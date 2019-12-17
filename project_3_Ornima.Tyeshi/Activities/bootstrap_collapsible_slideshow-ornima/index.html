@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <title>Collapsible and slideshow by Ornima Tyeshi</title>
+  </head>
+  <body>
+    <button type="button" name="button" class="btn btn-primary" data-toggle="collapse" data-target="#nyc">New York City</button>
+
+    <div class="collapse collapseNYC" id="nyc">
+      <p>New york city is situated on the world's largest natural harbors. It has five boroughs, each which is a separate county of the State of New york. The five borough are brooklyn, queens, mahattan, the bronx and staten island.</p>
+      <figure>
+        <img src="images/manhattan.jfif" alt="Manhattan"title="Manhattan" class="img-thumbnail">
+        <img src="images/brooklyn.jfif" alt="Brooklyn"title="Brooklyn" class="img-thumbnail">
+        <img src="images/bronx.jfif" alt="Bronx"title="Bronx" class="img-thumbnail">
+        <img src="images/queens.jpg" alt="Queens"title="Queens" class="img-thumbnail">
+        <img src="images/statenisland.jpg" alt="Staten Island"title="Staten Island" class="img-thumbnail">
+      </figure>
+    </div>
+    <br><br><hr><br><br>
+ <div id="NYCAccordion">  <!-- Collapsible Container -->
+   <div class="card">
+      <div class="card-header">
+        <h5> <a data-toggle="collapse" data-parent="NYCAccordion" href="#NYCContent">New york city</a></h5>
+      </div>
+
+      <div class="collapse collapseNYC" id="NYCContent">
+        <div class="card-block">
+          <p>New york city is situated on the world's largest natural harbors. It has five boroughs, each which is a separate county of the State of New york. The five borough are brooklyn, queens, mahattan, the bronx and staten island.</p>
+          <figure>
+            <img src="images/manhattan.jfif" alt="Manhattan"title="Manhattan" class="img-thumbnail">
+            <img src="images/brooklyn.jfif" alt="Brooklyn"title="Brooklyn" class="img-thumbnail">
+            <img src="images/bronx.jfif" alt="Bronx"title="Bronx" class="img-thumbnail">
+            <img src="images/queens.jpg" alt="Queens"title="Queens" class="img-thumbnail">
+            <img src="images/statenisland.jpg" alt="Staten Island"title="Staten Island" class="img-thumbnail">
+           </figure>
+         </div>
+       </div>
+     </div> <!-- end of card  -->
+  </div><!-- end of Collapsible Container -->
+
+<br><br><hr><br><br>
+
+<!-- Brooklyn -->
+<button type="button" name="button" class="btn btn-primary" data-toggle="collapse" data-target="#brooklyn">Brooklyn</button>
+
+<div class="collapse collapseBor" id="brooklyn">
+  <figure>
+  <img src="images/brooklyn.jfif" alt="Brooklyn"title="Brooklyn" class="img-thumbnail">
+  </figure>
+</div>
+
+<!-- QUEENS -->
+<button type="button" name="button" class="btn btn-primary" data-toggle="collapse" data-target="#queens">Queens</button>
+
+<div class="collapse collapseBor" id="queens">
+  <figure>
+  <img src="images/queens.jpg" alt="Queens"title="Queens" class="img-thumbnail">
+  </figure>
+</div>
+<!-- Manhattan -->
+<button type="button" name="button" class="btn btn-primary" data-toggle="collapse" data-target="#Manhattan">Manhattan</button>
+
+<div class="collapse collapseBor" id="Manhattan">
+  <figure>
+  <img src="images/manhattan.jfif" alt="Manhattan"title="Manhattan" class="img-thumbnail">
+  </figure>
+</div>
+<br><br><hr><br><br>
+
+<!-- carousels - slideshow -->
+<div class="carousel slide carouselContainer" data-ride="carousel" id="slideshow">  <!-- slideshow Container -->
+<div class="carousel-item active carouselSize">
+  <img src="images/brooklyn.jfif" alt="Brooklyn"title="Brooklyn" class="img-thumbnail">
+  <div class="carousel-caption-captionCSS">
+    Brooklyn
+  </div>
+</div>
+<div class="carousel-item carouselSize">
+  <img src="images/manhattan.jfif" alt="Manhattan"title="Manhattan" class="img-thumbnail">
+  <div class="carousel-caption-captionCSS">
+    Manhattan
+  </div>
+</div>
+
+<div class="carousel-item carouselSize">
+  <img src="images/queens.jpg" alt="Queens"title="Queens" class="img-thumbnail">
+  <div class="carousel-caption-captionCSS">
+    Queens
+  </div>
+</div>
+
+<!-- left and right control -->
+<a href="#slideshow" data-slide="prev" class="carousel-control-prev"> <span class="carousel-control-prev-icon"></span> </a>
+<a href="#slideshow" data-slide="next" class="carousel-control-next"> <span class="carousel-control-next-icon"></span> </a>
+
+<!-- indicators -->
+<ul class="carousel-indicators">
+  <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+  <li data-target="#slideshow" data-slide-to="1" ></li>
+  <li data-target="#slideshow" data-slide-to="2" ></li>
+</ul>
+</div><!-- end of carousel -->
+
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

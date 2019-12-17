@@ -1,0 +1,175 @@
+body{
+  padding: 10px;
+  box-sizing: border-box;
+}
+.p1{
+  background-color: khaki;
+  padding: 12px,
+}
+.p2{
+  background-color: coral;
+  padding: 12px,
+}
+.p3{
+  background-color: LightSteelBlue;
+  padding: 12px;
+}
+.p4{
+  background-color: rgb(240, 230, 140);
+  padding: 12px;
+}
+.p5{
+  background-color:rgb(255, 127, 80);
+  padding: 12px
+}
+.p6{
+  background-color: rgb(176, 196, 222);
+  padding: 12px;
+}
+.p7{
+  background-color: #00FA9A;
+  padding: 12px;
+}
+.p8{
+  background-color: #DA70D6;
+  padding: 12px;
+}
+.p9{
+  background-color: #D2B48C;
+  padding: 12px;
+}
+.p10{
+  background-color: rgb(240, 230, 140);
+  padding: 12px;
+}
+.p11{
+  background-color: rgb(240, 230, 140);
+  padding: 12px;
+}
+.p12{
+  background-color: rgb(240, 230, 140);
+  padding: 12px;
+}
+.gradient1{
+  background-image: linear-gradient(black, yellow);
+  height: 200px;
+}
+.gradient2{
+  background-image: linear-gradient(to top right, black, tomato);
+  height: 200px;
+}
+img{
+  width: 100%;
+  height:100%;
+}
+.img1{
+  width:500px;
+  height: 500px;
+  position: relative;
+}
+.flowerTitle{
+  width: 300px;
+  position: absolute;
+  top: 0px;
+  left: 125px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
+.container{
+  width: 500px;
+  height:500px;
+  position: relative;
+}
+.txtflower{
+  width: 200px;
+  position: absolute;
+  color: black;
+  font-size: 1.5em;
+  bottom: 30px;
+  right: 0px;
+}
+/*Hero Image*/
+.heroimage{
+  background-image:linear-gradient( rgba(240, 230, 140, 0.5),
+   rgba(176, 196, 222,0.5)),url("flower1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 700px;
+  width:700px;
+  position: relative;
+}
+.herotext{
+  width:50%;
+  position: absolute;
+  left: 25%;
+  bottom: 30%;
+  color: purple;
+  text-align: center;
+}
+.submit{
+  color: lightgray;
+  text-decoration: none;
+  display: inline-block;
+  margin: 60px;
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+.submit:hover{
+  background-color: white;
+  color: red;
+  box-shadow: 0px 0px 2px 2px black;
+}
+/*Blurred Images*/
+.filterconainer{
+  height: 1000px;
+  width: 1000px;
+  margin: auto;
+}
+.filterconainer img{
+  width: 40%;
+  height: 40%;
+  margin: 20px;
+}
+.blur1{
+  filter: blur(1px);
+}
+.blur2{
+  filter: blur(5px);
+}
+.blur3{
+  filter: blur(10px);
+}
+.blur4{
+  filter: blur(20px);
+}
+/* contrast filters */
+
+.contrast1{
+  filter: contrast(0%);
+}
+.contrast2{
+  filter: contrast(30%);
+}
+.contrast3{
+filter: contrast(60%);
+}
+.contrast4{
+filter: contrast(100%);
+}
+/* invert images*/
+.invert1{
+  filter: invert(0%);
+}
+.invert2{
+  filter: invert(30%);
+}
+.invert3{
+  filter: invert(60%);
+}
+.invert4{
+  filter: invert(100%);
+}

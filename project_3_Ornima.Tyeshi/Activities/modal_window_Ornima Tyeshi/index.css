@@ -1,0 +1,199 @@
+body{
+  padding: 10px;
+  background-color: 	#FFFFF0;
+}
+.linkModal{
+  text-align: center;
+  background-color: orange;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  text-decoration: none;
+}
+.linkModal:hover{
+  background-color: lightyellow;
+  color: orange;
+}
+.modalwindow{
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(100, 100, 100, 0.5);
+  opacity: 0;
+  pointer-events: none;
+}
+.modalwindow:target{
+  opacity: 1;
+  pointer-events: auto;
+  transition: ease-in 1s;
+}
+.msgText{
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  background-color: white;
+  top: 250px;
+  left: 600px;
+  padding: 20px;
+}
+.msgText h3{
+  background-color: lightgreen;
+  padding: 10px;
+  color: purple;
+}
+.msgText img{
+  width: 30%;
+  margin-left: 35%
+}
+.modal-close{
+padding: 12px;
+color: orange;
+text-decoration: none;
+}
+.modal-close:hover{
+  color: lightblue;
+  text-decoration: underline;
+}
+.mainframe{
+width:600px;
+height: 450px;
+padding-left:7%;
+padding-top: 2%;
+}
+.frame1{
+width: 100px;
+height: 450px;
+margin-left: -100px;
+}
+.img1{
+  width:350px;
+  height: 450px;
+ padding-left:-50px;
+ margin-left:-23%;
+}
+.frame2{
+width: 100px;
+height: 450px;
+margin-right: 50px;
+padding-left: 4%;
+}
+.img2{
+  width:180px;
+  height: 450px;
+}
+.frame1, frame2{
+  float:right;
+  width: 50%;
+}
+.mainframe1{
+width:600px;
+height: 450px;
+padding-left: 5%;
+}
+.main1{
+margin: 5.5px;
+height:200px;
+width: 47%;
+margin-top: -15px;
+}
+.main2{
+  margin: 5.5px;
+  height:200px;
+  width: 47%;
+  margin-top: 0px;
+}
+.main1, main2{
+  float:right;
+  width: 50%;
+}
+.i1{
+  color: blue;
+  }
+.i5{
+  color: blue;
+}
+.i4 {
+  color: red;
+}
+.i8 {
+  color: red;
+}
+.linkModal2{
+  text-align: center;
+  background-color: gray;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+.linkModal2:hover{
+  background-color: lightblue;
+  color: black;
+}
+.modalwindow2{
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(100, 100, 100, 0.5);
+  opacity: 0;
+  pointer-events: none;
+}
+.modalwindow2:target{
+  opacity: 1;
+  pointer-events: auto;
+  transition: ease-in 1s;
+}
+.msgText2{
+  position: absolute;
+  width: 500px;
+  height: 350px;
+  background-color: white;
+  top: 200px;
+  left: 500px;
+  padding: 20px;
+}
+.msgText2 h3{
+  background-color: lightgreen;
+  padding: 2px;
+  color: purple;
+}
+.msgText2 img{
+  width: 20%;
+  height: 60%;
+  margin-left: 1%;
+  padding-left: 80px;
+  padding-bottom: 200px;
+}
+.modal-close2{
+padding: 12px;
+color: orange;
+text-decoration: none;
+}
+.modal-close2:hover{
+color: lightblue;
+text-decoration: none;
+}
+.msgText2{
+  width:500px;
+  padding:1%;
+  float:left;
+}
+.Tyeshi{
+  color: red;
+}
+.practice{
+  padding-top: 30px;
+  margin: 5.5px;
+  height:300px;
+  width: 50%;
+  margin-top: 0px;
+}
+.practice, img12{
+  float: right;
+  width: 50%;
+}

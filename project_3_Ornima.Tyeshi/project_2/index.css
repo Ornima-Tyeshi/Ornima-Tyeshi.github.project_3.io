@@ -1,0 +1,405 @@
+body{
+  background-color: 	#FFDAB9;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+*{
+  box-sizing: border-box;
+}
+.container{
+  width: 90%;
+  margin: auto;
+  height: 260px;
+  overflow: hidden;
+}
+/*-- animation with zoom effect effect--*/
+.zoomimage{
+  width: 20%;
+  height:100%;
+  float: left;
+  animation: zoom 5s;
+}
+@keyframes zoom {
+  0%{transform: scale(0); }
+  50%{transform: scale(0.7);}
+  100%{transform: scale(1);}
+}
+/*-- end of animation with zoom effect--*/
+
+/*-- animation with transform and translate effect--*/
+.headerText{
+width: 75%;
+height: 130px;
+color:	#DDA0DD;
+background-color: #FFFFE0;
+animation: textMove 6s;
+float: right;
+}
+.headerImg{
+  width: 75%;
+  height: 130px;
+  float: right;
+  animation: imageMove 6s;
+}
+h2{
+  color:#48D1CC;
+  font-style: oblique;
+}
+@keyframes textMove {
+  0%{transform:  translateY(-200px);}
+  30%{transform:translateY(400px);}
+  60%{transform:translateY(-200px);}
+  100%{transform: translateY(0px);}
+}
+@keyframes imageMove {
+  0%{transform:  translateY(200px);}
+  30%{transform:translateY(-400px);}
+  60%{transform:translateY(200px);}
+  100%{transform: translateY(0px);}
+}
+/*-- animation with transform and translate effect--*/
+
+/*-- slide show with backward effect and 5% delay time--*/
+*{box-sizing: border-box;}
+
+.Slideshow{
+  overflow: hidden;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+}
+.slide-wrapper{
+width: 4500px; /*--to display 3 images we need 3 times the size of the Slideshow--*/
+height: 100px;
+animation: Slideshow 15s infinite;
+}
+@keyframes Slideshow {
+0%{margin-left: 0px;}
+20%{margin-left: 0px;}/*show the 1st image*/
+40%{margin-left: -1500px;}/*show the 1st image*/
+60%{margin-left: -1500px;}/*show the 1st image*/
+80%{margin-left: -3000px;}/*show the 2nd image*/
+90%{margin-left: -3000px;}/*show the 2nd image*/
+95%{margin-left: 0px;}/*show the 3rd image*/
+100%{margin-left: 0px;}/*show the 3rd image*/
+}
+.id{
+  font-size:0.8em;
+  font-family: monospace;
+  color: white;
+}
+.slide{
+  float: left;
+  height: 100%;
+  width: 33.33%; /* 100%/3 = 33.33% */
+  text-align: center;
+}
+.slide:nth-child(1){
+background-color: 	#8FBC8F;
+color: 	#8B0000;
+font-size: 1.2em;
+font-style: oblique;
+}
+.slide:nth-child(2){
+  background-color: 	#66CDAA;
+  color: #DC143C;
+  font-size: 1.8em;
+  font-style: oblique 20deg;
+}
+.slide:nth-child(3){
+  background-color: #B0C4DE;
+  color: #B8860B;
+  font-size: 1.3em;
+  font-style: oblique 40deg;
+}
+/*opacity Images*/
+.Text{
+  border: solid #800080;
+  width: 600px;
+  position: absolute;
+  top: 300px;
+  left: 280px;
+  background-color:#8B4513;
+  padding: 10px;
+  text-align: left;
+  font-size: 1.6em;
+  color: white;
+  opacity: 0.5;
+  color:#00FF7F;
+}
+.box{
+  width:70%;
+  height:500;
+  position: relative;
+  top: 30px;
+  left: 245px;
+}
+figcaption{
+  color: #008080;
+  font-size: 1.5em;
+  font-style: italic;
+}
+/* end of opacity Images*/
+
+/*linear gradient Images*/
+.gradient{
+  background-image:linear-gradient( rgba(240, 230, 140, 0.5),
+   rgba(176, 196, 222,0.5)),url("images/gradient.jpg");
+  background-repeat: no-repeat;
+  background-size: 60% 60%;
+  height: 700px;
+  width:70%;
+  left: 460px;
+  position: relative;
+}
+.text{
+  width: 420px;
+  position: absolute;
+  font-family: sans-serif;
+  color: black;
+  top: 85px;
+  left: 200px;
+  right: 100px;
+}
+/*modal window*/
+.mainframe{
+  width: 100%;
+  height: 500px;
+  padding-bottom: 200px;
+}
+.frame1{
+  width: 25%;
+  height: 400px;
+}
+.img1{
+  width:100%;
+  height: 250px;
+  padding-left: 30px;
+}
+.frame2{
+  width: 25%;
+  height: 400px;
+}
+.img2{
+  width: 100%;
+  height: 250px;
+  padding-right: 30px;
+}
+.frame3{
+  width: 25%;
+  height: 400px;
+}
+.img3{
+  width: 100%;
+  height: 250px;
+  padding-right: 30px;
+}
+.frame4{
+  width: 25%;
+  height: 400px;
+}
+.img4{
+  width: 100%;
+  height: 250px;
+  padding-right: 30px;
+}
+.frame1, .frame2, .frame3, .frame4{
+  float: right;
+  width: 25%;
+}
+
+.mainframe2{
+  width: 100%;
+  height: 500px;
+  padding-bottom: 200px;
+}
+.frame5{
+  width: 25%;
+  height: 400px;
+  padding: -100px;
+}
+.img5{
+  width: 100%;
+  height: 250px;
+  padding-left: 30px;
+}
+.frame6{
+  width: 25%;
+  height: 400px;
+}
+.img6{
+  width: 100%;
+  height: 250px;
+  padding-right: 30px;
+}
+.frame7{
+  width: 25%;
+  height:400px;
+}
+.img7{
+  width: 100%;
+  height: 250px;
+  padding-right: 30px;
+}
+.frame8{
+  width: 25%;
+  height: 400px;
+}
+.img8{
+  width: 100%;
+  height: 250px;
+  padding-right: 30px;
+}
+.frame5, .frame6, .frame7, .frame8{
+  float: right;
+  width: 25%;
+}
+.i1{
+  color: blue;
+  }
+.i5{
+  color: blue;
+}
+.i4 {
+  color: red;
+}
+.i8 {
+  color: red;
+}
+.linkModal{
+  text-align: center;
+  background-color: gray;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  text-decoration: none;
+}
+.linkModal:hover{
+  background-color: lightblue;
+  color: black;
+}
+.modalwindow{
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(100, 100, 100, 0.5);
+  opacity: 0;
+  pointer-events: none;
+}
+.modalwindow:target{
+  opacity: 1;
+  pointer-events: auto;
+  transition: ease-in 1s;
+}
+.msgText{
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  top: 200px;
+  left: 500px;
+  padding: 20px;
+}
+.msgText h3{
+  background-color: lightgreen;
+  padding: 2px;
+  color: purple;
+  margin: auto;
+}
+.tye{
+  width: 70%;
+  height: 150px;
+  padding-left: 80px;
+}
+.msgText, .img{
+  width: 35%;
+  float: right;
+  height: 73%;
+  padding-left: 130px;
+}
+.modal-close{
+padding-top: 10px;
+padding-left: 340px;
+color: violet;
+text-decoration: none;
+}
+.modal-close:hover{
+color: lightblue;
+text-decoration: none;
+}
+.Tyeshi{
+  color: red;
+}
+.practice{
+  padding-top: 30px;
+  height:300px;
+  width: 300px;;
+  margin-top: 0px;
+}
+
+.bcg{
+  width: 100%;
+  height: 300px;
+  background-color: lightblue;
+  padding-top: 50px;
+}
+.con1{
+  width: 15%;
+  height: 200px;
+}
+.con2{
+  width: 25%;
+  height: 200px;
+}
+.con3{
+  width: 25%;
+  height: 200px;
+}
+.con4{
+  width: 25%;
+  height: 200px;
+}
+.con1, .con2, .con3, .con4{
+float: left;
+width: 25%;
+padding: 40px;
+}
+.pgf{
+  width: 100%;
+  height: 40px;
+  font-size: 1.1em;
+  padding-left:460px;
+  text-decoration-color: white;
+  background-color: violet;
+}
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: gray;
+  height: 35px;
+  width: 1500px;
+  padding-left: 940px;
+}
+.flex-container div{
+  width:30px;
+  height: 30px;
+  margin-left: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 1410){
+.Slideshow{
+  width: 20%;
+}
+.box{
+  width: 30%;
+}
+}
